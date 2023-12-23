@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart House Solutions</title>
+  <script src="MyFunctions.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<P id="Appliances"></P>
+</head>
+<body onload="drawCaptcha();">
+
+  <h1>مرحبًا بك في موقعنا الرسمي</h1>
+  <table>
+      <tr>
+          <td>
+            <img src="images/Product1.png" alt="Product1">
+          </td>
+
+          <td>
+              <h2>ميكروويف</h2>
+              <p><strong>السعة:</strong> 32 لتر</p>
+              <p><strong>نوع التثبيت:</strong> سطح المنضدة</p>
+              <p><strong>القوة الكهربائية:</strong> 1400 واط</p>
+              <p><strong>نوع جهاز التحكم:</strong> تعمل باللمس</p>
+              <p class="price"><strong>السعر:</strong> $120</p>
+          </td>
+          <td>
+              <form>
+                  <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox1'); addToCart('مكروويف', 120, 'valueBox1' );">
+              </form>
+              <form>
+                  <input type="button" value="إلغاء" onclick="removeFromCart('مكروويف'); resetValues('valueBox1' );">
+              </form>
+              <div id="valueBox1">0</div>
+          </td>
+      </tr>
+  </table>
+  <br\>
+      <table>
+
+          <tr>
+              <td>
+                <img src="images/Product2.png" alt="Product2">
+              </td>
+              <td>
+                  <h2>براد</h2>
+                  <p><strong>السعة:</strong> 32 لتر</p>
+                  <p><strong>اللون:</strong> جرافيت معدني</p>
+                  <p><strong>عدد المنافذ:</strong> 2</p>
+                  <p><strong>القوة الكهربائي:</strong> 220 فولط</p>
+                  <p><strong>سعة الفريز:</strong> 94 لتر</p>
+                  <p class="price"><strong>السعر : </strong> $530 </p>
+              </td>
+              <td>
+                  <form>
+                      <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox2'); addToCart('براد', 530, 'valueBox2' );">
+                  </form>
+                  <form>
+                      <input type="button" value="إلغاء" onclick="removeFromCart('براد'); resetValues('valueBox2' );">
+                  </form>
+                  <div id="valueBox2">0</div>
+              </td>
+          </tr>
+
+      </table>
+      <br\>
+          <table>
+
+              <tr>
+                  <td>
+                    <img src="images/Product3.png" alt="Product3">
+                  </td>
+                  <td>
+                      <h2>غسالة</h2>
+                      <p><strong>نوع:</strong> غسالة اوتوماتيك ديجيتال</p>
+                      <p> <strong>شاشة:</strong>LED </p>
+                      <p><strong>اللون:</strong> فضي</p>
+                      <p class="price"><strong>:السعر</strong> $200 </p>
+                  </td>
+                  <td>
+                      <form>
+                          <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox3'); addToCart('غسالة', 200, 'valueBox3' );">
+                      </form>
+                      <form>
+                          <input type="button" value="إلغاء" onclick="removeFromCart('غسالة'); resetValues('valueBox3' );">
+                      </form>
+                      <div id="valueBox3">0</div>
+                  </td>
+              </tr>
+          </table>
+          <br\>
+
+
+
+
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product4.png" alt="Product4">
+                      </td>
+                      <td>
+                          <h2>جلاية </h2>
+                          <p><strong>السعة:</strong> 1,8 لتر</p>
+                          <p><strong>القوة الكهربائية:</strong> 1500 واط</p>
+                          <p><strong>نوع التشطيب النهائي:</strong> مصقول</p>
+                          <p><strong>نوع الحاوية:</strong> غلاية</p>
+                          <p><strong>مواد:</strong> ستانلس ستيل</p>
+                          <p><strong>اللون:</strong> فضي</p>
+                          <p class="price"><strong> السعر:</strong> $70 </p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox4'); addToCart('جلاية', 70, 'valueBox4' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('جلاية'); resetValues('valueBox4' );">
+                          </form>
+                          <div id="valueBox4">0</div>
+                      </td>
+                  </tr>
+              </table>
+              <br />
+
+
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product5.png" alt="Product5">
+                      </td>
+
+                      <td>
+                          <h2>موزع مياه</h2>
+                          <p><strong>مواد:</strong> ستالس ستيل</p>
+                          <p><strong>ابعاد المنتج العمق*العرض*الارتفاع:</strong></p>
+                          <p>29,5h**98w**29,5d</p>
+                          <p><strong>اللون:</strong> اسود</p>
+                          <p class="price"><strong>السعر:</strong> $40 </p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox5'); addToCart('موزرع مياه', 40, 'valueBox5' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('موزع مياه'); resetValues('valueBox5' );">
+                          </form>
+                          <div id="valueBox5">0</div>
+                      </td>
+                  </tr>
+
+              </table>
+              <br />
+
+
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product6.png" alt="Product6">
+                      </td>
+
+                      <td>
+                          <h2>شفاط حمام</h2>
+                          <p><strong>مصدر الطاقة:</strong> كهربائي</p>
+                          <p><strong>الجهد الكهربائي:</strong> 220 فولط</p>
+                          <p> <strong>  وزن السعلة:</strong>3kg</p>
+                          <p><strong>ابعاد المنتج: العمق*العرض*الارتفاع:</strong></p>
+                          <p>59h**42,7w**24,3d</p>
+                          <p><strong>اللون:</strong> اسود</p>
+                          <p class="price"><strong>السعر:</strong> $10 </p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox6'); addToCart('شطاف حمام', 10, 'valueBox6' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('شطاف حمام'); resetValues('valueBox6' );">
+                          </form>
+                          <div id="valueBox6">0</div>
+                      </td>
+                  </tr>
+              </table>
+              <br />
+
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product7.png" alt="Product7">
+                      </td>
+                      <td>
+                          <h2>مكنسة كهربائية</h2>
+                          <p><strong>مميزات خاصة:</strong> وزن خفيف</p>
+                          <p><strong>نوع الفلتر:</strong> خرطوشة</p>
+                          <p><strong>مصدر الطاقة:</strong> موصل بسلك كهربائي</p>
+                          <p><strong>الجهد الكهربائي:</strong> 220 فولط</p>
+                          <p> <strong>وزن السعلة:</strong>7kg</p>
+                          <p class="price"> <strong>السعر:</strong>$270</p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox7'); addToCart('مكنسة كهربائية', 270, 'valueBox7' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('مكنسة كهربائية'); resetValues('valueBox7' );">
+                          </form>
+                          <div id="valueBox7">0</div>
+                      </td>
+                  </tr>
+              </table>
+              <br />
+
+              <table>
+                  <tr>
+                      <td>
+                          <img src="images/Product8.png" alt="Product8">
+                      </td>
+
+                      <td>
+                          <h2>شاشة تلفاز</h2>
+                          <p><strong>حجم الشاشة:</strong> 55 بوصة</p>
+                          <p><strong>خدمات انترنت المدعومة:</strong> المستعرض</p>
+                          <p> <strong>تكنولوجيا العرض:</strong> QLED</p>
+                          <P><strong>الدقة:</strong> 4K </P>
+                          <P><strong>معدل التحديث:</strong>60HZ  </P>
+                          <p class="price"> <strong>السعر:</strong> $600 </p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox8'); addToCart('شاشة تلفاز', 600, 'valueBox8' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('شاشة تلفاز'); resetValues('valueBox8' );">
+                          </form>
+                          <div id="valueBox8">0</div>
+                      </td>
+                  </tr>
+
+              </table>
+              <br />
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product9.png" alt="Product9">
+                      </td>
+
+                      <td>
+                          <h2>مقلاة هوائية</h2>
+                          <p><strong>نوع جهاز التحكم:</strong> تعمل باللمس</p>
+                          <p><strong>اللون:</strong> اسود</p>
+                          <p> <strong>معدل التحديث:</strong>60hz</p>
+                          <p class="price"> <strong>السعر:</strong>$170</p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox9'); addToCart('مقلاة هوائية', 170, 'valueBox9' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('مقلاة هوائية'); resetValues('valueBox9' );">
+                          </form>
+                          <div id="valueBox9">0</div>
+                      </td>
+                  </tr>
+
+              </table>
+              <br />
+
+              <table>
+                  <tr>
+                      <td>
+                        <img src="images/Product10.png" alt="Product10">
+                      </td>
+
+                      <td>
+                          <h2>جهاز تكييف</h2>
+                          <p><strong>سعة:</strong> 396لتر</p>
+                          <p> <strong> عدد المنافذ:</strong>2</p>
+                          <p class="price"> <strong>السعر:</strong>$300</p>
+                      </td>
+                      <td>
+                          <form>
+                              <input type="button" value="أضف إلى السلة" onclick="increaseValue('valueBox10'); addToCart('جهاز تكييف', 300, 'valueBox10' );">
+                          </form>
+                          <form>
+                              <input type="button" value="إلغاء" onclick="removeFromCart('جهاز تكييف'); resetValues('valueBox10' );">
+                          </form>
+                          <div id="valueBox10">0</div>
+                      </td>
+                  </tr>
+
+
+              </table>
+              <br />
+              <br />
+              <form>
+                  <input class="button" type="button" value="شراء" onclick="showCart()">
+              </form>
+              <br />
+              <br />
+
+              <table id="caet" class="hidden">
+
+                  <tr>
+                      <td>
+                          <h1>سلة المشتريات</h1>
+                          <div id="cartDisplay"></div>
+                          <br />
+
+                          <div id="totalDisplay"></div>
+                          <form>
+                              <input type="button" value="متابعة" onclick="showCHK1()">
+                              <input type="reset" value="الغاء" onclick="updatePage()">
+                          </form>
+                      </td>
+                  </tr>
+              </table>
+              <div id="Button1" class="hidden1">
+                  <table>
+                      <tr>
+                          <form onsubmit="return validateForm();">
+                              <label for="name1">الاسم الكامل:</label>
+                              <input type="text" id="name1" name="name1" required class="chk1">
+                              <br />
+                              <label for="num">الرقم الوطني:</label>
+                              <input type="text" id="num" name="num" pattern="[0-9]{11}" required class="chk1">
+                              <br />
+                              <label for="date">تاريخ الميلاد:</label>
+                              <input type="date" id="date" name="date" required class="chk1">
+                              <br />
+                              <label for="phon">ادخل رقم الهاتف:</label>
+                              <input type="text" id="phon" name="phon" pattern="[0-9]*" class="chk1">
+                              <br />
+                              <label for="email">البريد الإلكتروني:</label>
+                              <input type="email" id="email" name="email" class="chk1">
+                              <br />
+                              <label for="txtCaptcha">رمز التحقق:</label>
+                              <input type="text" id="txtCaptcha" readonly class="chk1">
+                              <br />
+                              <label for="txtInput">أدخل الرمز:</label>
+                              <input type="text" id="txtInput" pattern="[0-9]{7}" class="chk1">
+                              <br />
+                              <input type="submit" value="تحقق" class="chk1 ">
+
+                          </form>
+                      </tr>
+                  </table>
+              </div>
+
+</body>
+</html>
